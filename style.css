@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+
+}
+
+
+/* 
+========================
+       NavBar
+========================
+*/
+
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+}
+
+.navbar div:nth-child(1) {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+}
+.navbar div:nth-child(2) {
+    width: 1px;
+    position: absolute;
+    height: 3.5rem;
+    left: 17vw;
+    background: white;
+
+    
+}
+.navbar div:nth-child(3) {
+    width: 50vw;
+    margin-left: 3rem;
+}
+.navbar div:nth-child(4) {
+    width: 25vw;
+    display: flex;
+    justify-content: right;
+}
+
+.logo {
+    width: 7rem;
+}
+.list {
+    display: flex;
+    list-style-type: none;
+}
+
+.list-item {
+    margin: 0 2rem;
+    padding: 0.6rem 0.5rem;
+    border: none;
+    font-weight: bold;
+}
+.list-item:hover {
+    color: black;
+    background-color: #BA0CC5;
+    border-radius: 1rem;
+    cursor: pointer; 
+}
+
+.button-small {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background-color: #BA0CC5;
+    color: white;
+    border:none;
+    cursor: pointer;
+}
+.navbar .grow-list .list li:first-child::after {
+    content:"";
+    position:absolute;
+    border:solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    left: 23.6rem;
+    top: 3.1rem;
+}
+
+/* 
+=================================
+    Hero Section/ main section
+==================================
+*/
+.hero {
+    background: url(./assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 930px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat';
+
+}
+
+.hero-heading {
+    font-size: 5.2rem;
+    padding: 0rem 8rem;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.hero-description {
+    font-size: 2rem;
+}
+
+.button-large {
+    margin-top : 2rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color: #BA0CC5;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #BA0CC5;
+    background-color: white;
+}
