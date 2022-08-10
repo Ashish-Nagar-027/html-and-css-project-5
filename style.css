@@ -12,6 +12,10 @@
 ========================
 */
 
+#ham {
+    display: none;
+}
+
 .navbar{
     background-color: black;
     color: white;
@@ -25,14 +29,13 @@
     display: flex;
     justify-content: center;
 }
-.navbar div:nth-child(2) {
+
+#line {
     width: 1px;
     position: absolute;
     height: 3.5rem;
     left: 17vw;
     background: white;
-
-    
 }
 .navbar div:nth-child(3) {
     width: 50vw;
@@ -131,3 +134,89 @@ button:hover {
     color: #BA0CC5;
     background-color: white;
 }
+
+
+
+@media only screen and (max-width: 1170px) {
+    .list-item {
+        margin: 0rem 0.5rem;
+    }
+    .navbar .grow-list .list li:first-child::after {
+        display: none;
+    }
+    .navbar div:nth-child(2) {
+        left: 19vw;
+    }
+    
+    .hero-heading{
+        font-size: 4rem;
+    }
+    .hero-description {
+        font-size: 1.5rem;
+    }
+
+  }
+
+@media only screen and (max-width: 900px) {
+    .navbar div:nth-child(2) {
+        display: none;
+    }
+    .line {
+        display: none;
+    }
+    #ham {
+        display: flex;
+    }
+    .button-small {
+        display: none;
+    }
+    .grow-list {
+        display: none;
+    }
+   
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .hero-heading{
+        font-size: 3.5rem;
+    }
+    .hero-description {
+        font-size: 1rem;
+    }
+    .button-large {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-heading{
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    .hero-description {
+        font-size: 0.8rem;
+    }
+    .button-large {
+        font-size:1rem ;
+    }
+    .logo{
+        width: 5rem;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .hero-heading{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+    .hero-description {
+        font-size: 0.5rem;
+    }
+    .button-large {
+        font-size:0.8rem ;
+    }
+    .logo{
+        width: 5rem;
+    }
+}
+
